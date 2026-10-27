@@ -1,12 +1,5 @@
 {
   "name": "arab-chai-cafe",
   "version": "1.0.0",
-  "description": "Arab Chai Cafe & Restaurant Website - Al Mina, Dubai",
-  "scripts": {
-    "dev": "python3 -m http.server 3000",
-    "build": "echo 'Static build ready'"
-  },
-  "keywords": ["cafe", "karak", "dubai", "restaurant"],
-  "author": "",
-  "license": "MIT"
+  "description": "Arab Chai Cafe & Restaurant Website - Al Mina, Dubai"
 }
