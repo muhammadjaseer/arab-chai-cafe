@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arab Chai Cafe &amp; Restaurant | Al Mina Dubai | Authentic Karak &amp; Cafeteria</title>
+  <meta name="description" content="Arab Chai Cafe &amp; Restaurant in Al Mina, Dubai. Rated 4.8 stars with 246+ reviews. Famous Zafran Karak chai, Oman chips porotta, shawarmas, burgers, and fast car window delivery." />
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/arab-chai-logo.svg" />
+  
+  <!-- Remix Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="app-wrapper">
+
+  <!-- =======================================================================
+       1. SIDEBAR NAVIGATION (Baristo Sepia Style)
+       ======================================================================= -->
+  <aside class="main-sidebar" id="mainSidebar">
+    <div class="sidebar-header">
+      <a href="#hero" class="sidebar-logo">
+        <img src="assets/arab-chai-logo.svg" alt="Arab Chai Cafe Logo" class="logo-img" />
+      </a>
+    </div>
+
+    <nav class="sidebar-navigation">
+      <ul>
+        <li>
+          <a href="#hero" class="active">
+            <i class="ri-home-5-line"></i>
+            <span>Home</span>
+          </a>
+        </li>
+        <li>
+          <a href="#drinks-scroll">
+            <i class="ri-cup-line"></i>
+            <span>Signature Karak</span>
+            <span class="badge-pill">Hot</span>
+          </a>
+        </li>
+        <li>
+          <a href="#menu">
+            <i class="ri-restaurant-line"></i>
+            <span>Full Menu</span>
+          </a>
+        </li>
+        <li>
+          <a href="#car-delivery">
+            <i class="ri-roadster-line"></i>
+            <span>Car Delivery</span>
+            <span class="badge-pill">Fast</span>
+          </a>
+        </li>
+        <li>
+          <a href="#reviews">
+            <i class="ri-star-line"></i>
+            <span>Reviews</span>
+            <span class="badge-pill">4.8 ★</span>
+          </a>
+        </li>
+        <li>
+          <a href="#location">
+            <i class="ri-map-pin-line"></i>
+            <span>Find Us (Al Mina)</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="sidebar-order-card">
+        <h4><i class="ri-whatsapp-line"></i> Order Direct</h4>
+        <p>Send your order straight to our kitchen on WhatsApp for quick pickup or car delivery.</p>
+        <a href="https://wa.me/971566847002?text=Hello%20Arab%20Chai%20Cafe!%20I%20would%20like%20to%20order." target="_blank" class="btn-whatsapp-sidebar">
+          <i class="ri-whatsapp-fill"></i> WhatsApp Us
+        </a>
+      </div>
+      <div class="sidebar-timings">
+        <span class="status-dot"></span>
+        <span>Open Now • 6:00 AM – 2:00 AM</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- =======================================================================
+       2. MAIN CONTENT AREA
+       ======================================================================= -->
+  <main class="main-content">
+
+    <!-- Top Sticky Header -->
+    <header class="main-header">
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation">
+        <i class="ri-menu-2-line"></i>
+      </button>
+
+      <!-- Live Search Filter -->
+      <div class="header-search">
+        <i class="ri-search-line"></i>
+        <input type="text" id="headerSearchInput" placeholder="Search Karak, shawarma, porotta, club..." />
+      </div>
+
+      <!-- Actions & Order Mode -->
+      <div class="header-actions">
+        <div class="dining-mode-selector">
+          <button class="dining-mode-btn active" data-mode="car">
+            <i class="ri-car-line"></i> Car Window
+          </button>
+          <button class="dining-mode-btn" data-mode="takeaway">
+            <i class="ri-shopping-bag-line"></i> Takeaway
+          </button>
+          <button class="dining-mode-btn" data-mode="dinein">
+            <i class="ri-restaurant-2-line"></i> Dine-In
+          </button>
+        </div>
+
+        <button class="btn-cart-header" id="headerCartBtn">
+          <i class="ri-shopping-basket-line"></i>
+          <span>Tray</span>
+          <span class="cart-count-badge" id="headerCartCount">0</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- =====================================================================
+         3. HERO PRODUCT CUSTOMIZER (Baristo Arch & Showcase)
+         ===================================================================== -->
+    <section class="product-customizer" id="hero">
+      <div class="customizer-grid">
+
+        <!-- Column 1: Story & Dynamic Details -->
+        <div class="product-content">
+          <div class="welcome-text">
+            <i class="ri-sparkles-line"></i> Marhaba! Al Mina's Favorite Karak &amp; Snacks
+          </div>
+
+          <h1>
+            Authentic Dubai <br />
+            <span>Karak Chai</span> &amp; Bites
+          </h1>
+          <div class="title-line"></div>
+          <p class="subtitle">
+            Slow-simmered Assam black tea with rich milk, whole crushed cardamom pods &amp; Iranian saffron strands. Served steaming hot with your favorite Dubai cafeteria snacks.
+          </p>
+
+          <!-- Framed Paper Texture Box -->
+          <div class="product-info-box">
+            <div class="paper-texture"></div>
+            <div class="product-info-content">
+              <h2>
+                <span id="heroDrinkTitle">Special Zafran Karak Chai</span>
+                <span class="arabic-name" id="heroDrinkArabic">شاي كرك بالزعفران</span>
+              </h2>
+              <p id="heroDrinkSubtitle">
+                Aromatic Assam black tea slow-brewed with fresh whole milk, crushed green cardamom &amp; pure saffron threads.
+              </p>
+
+              <!-- Dynamic Feature Badges -->
+              <div class="feature-tag-list" id="heroTagsList">
+                <span class="feature-tag"><i class="ri-check-line"></i> Pure Saffron</span>
+                <span class="feature-tag"><i class="ri-check-line"></i> Crushed Cardamom</span>
+                <span class="feature-tag"><i class="ri-check-line"></i> Fresh Whole Milk</span>
+                <span class="feature-tag"><i class="ri-check-line"></i> Brewed to Order</span>
+              </div>
+
+              <div class="price-calorie-row">
+                <div class="calorie-badge">
+                  <i class="ri-fire-fill"></i>
+                  <span id="heroCaloriesVal">145 kcal</span>
+                </div>
+                <div class="hero-price">
+                  <span class="curr">AED</span>
+                  <span id="heroPriceVal">3.50</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2: Arch Showcase & 3D Platform Pedestal -->
+        <div class="product-showcase">
+          <!-- Arch Background -->
+          <div class="product-arch"></div>
+
+          <!-- 3D Platform Pedestal -->
+          <div class="product-platform">
+            <div class="platform-top"></div>
+          </div>
+
+          <!-- Cup Image & Steam Animation -->
+          <div class="product-image">
+            <div class="steam-container">
+              <span class="steam-particle"></span>
+              <span class="steam-particle"></span>
+              <span class="steam-particle"></span>
+            </div>
+            <img src="assets/coffee/1.png" alt="Zafran Karak Chai" class="main-cup-img" id="heroCupImg" />
+          </div>
+
+          <!-- Floating Coffee Beans / Spices -->
+          <img src="assets/coffee-beans.png" alt="Tea Spices" class="floating-beans" />
+
+          <!-- Handwritten Note & Dual Arrow -->
+          <div class="product-note">
+            <div class="note-text">
+              Freshly brewed <br />
+              <span class="highlight">every 20 mins!</span>
+            </div>
+            <img src="assets/dual-arrow.png" alt="Arrow" class="note-arrow" />
+          </div>
+        </div>
+
+        <!-- Column 3: Interactive Step Customizer -->
+        <div class="customizer-steps-panel">
+          <div class="step-header">
+            <h3><i class="ri-equalizer-line"></i> Customize Your Chai</h3>
+            <div class="step-indicator">
+              <span class="step-dot active">1</span>
+              <span class="step-dot active">2</span>
+              <span class="step-dot active">3</span>
+            </div>
+          </div>
+
+          <!-- Step 1: Cup Style & Size -->
+          <div>
+            <div class="step-section-title">1. Choose Cup &amp; Vessel</div>
+            <div class="options-pill-grid">
+              <button type="button" class="option-pill-btn active" onclick="selectSize('regular', 0, this)">
+                <div class="opt-title">
+                  <span>Regular Glass</span>
+                  <span class="opt-price">+0.00</span>
+                </div>
+                <div class="opt-desc">Classic 150ml tea glass</div>
+              </button>
+
+              <button type="button" class="option-pill-btn" onclick="selectSize('large', 1.5, this)">
+                <div class="opt-title">
+                  <span>Large Cup</span>
+                  <span class="opt-price">+1.50</span>
+                </div>
+                <div class="opt-desc">250ml jumbo takeaway</div>
+              </button>
+
+              <button type="button" class="option-pill-btn" onclick="selectSize('kulhad', 2.0, this)">
+                <div class="opt-title">
+                  <span>Clay Matka</span>
+                  <span class="opt-price">+2.00</span>
+                </div>
+                <div class="opt-desc">Earthy clay kulhad pot</div>
+              </button>
+
+              <button type="button" class="option-pill-btn" onclick="selectSize('dallah', 15.0, this)">
+                <div class="opt-title">
+                  <span>1L Dallah Flask</span>
+                  <span class="opt-price">+15.00</span>
+                </div>
+                <div class="opt-desc">Thermal sharing flask</div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 2: Milk & Sweetness -->
+          <div>
+            <div class="step-section-title">2. Sweetness &amp; Spice</div>
+            <div class="options-pill-grid">
+              <button type="button" class="option-pill-btn active" onclick="selectSweetness('standard', 0, this)">
+                <div class="opt-title">Standard Karak</div>
+                <div class="opt-desc">Perfect balanced sweetness</div>
+              </button>
+
+              <button type="button" class="option-pill-btn" onclick="selectSweetness('strong', 0, this)">
+                <div class="opt-title">Extra Kadak</div>
+                <div class="opt-desc">Stronger tea decoction</div>
+              </button>
+
+              <button type="button" class="option-pill-btn" onclick="selectSweetness('less', 0, this)">
+                <div class="opt-title">Less Sugar</div>
+                <div class="opt-desc">Mild gentle sweetness</div>
+              </button>
+
+              <button type="button" class="option-pill-btn" onclick="selectSweetness('saffron', 1.5, this)">
+                <div class="opt-title">
+                  <span>Pure Zafran</span>
+                  <span class="opt-price">+1.50</span>
+                </div>
+                <div class="opt-desc">Extra saffron filaments</div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Step 3: Cafeteria Snack Pairing -->
+          <div>
+            <div class="step-section-title">3. Pair With A Cafeteria Snack</div>
+            <div class="options-pill-grid">
+              <button type="button" class="option-pill-btn active" onclick="selectSnack('none', 0, this)">
+                <div class="opt-title">Chai Only</div>
+                <div class="opt-desc">Just the hot drink</div>
+              </button>
+
+              <button type="button" class="option-pill-btn" onclick="selectSnack('oman', 6.0, this)">
+                <div class="opt-title">
+                  <span>Oman Chips Roll</span>
+                  <span class="opt-price">+6.00</span>
+                </div>
+                <div class="opt-desc">Porotta, Kraft &amp; Chips</div>
+              </button>
+
+              <button type="button" class="option-pill-btn" onclick="selectSnack('samosa', 3.0, this)">
+                <div class="opt-title">
+                  <span>Hot Samosas (2x)</span>
+                  <span class="opt-price">+3.00</span>
+                </div>
+                <div class="opt-desc">Crispy spiced potato/pea</div>
+              </button>
+
+              <button type="button" class="option-pill-btn" onclick="selectSnack('bun', 4.0, this)">
+                <div class="opt-title">
+                  <span>Bun Maska</span>
+                  <span class="opt-price">+4.00</span>
+                </div>
+                <div class="opt-desc">Warm buttered sweet bun</div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="customizer-actions">
+            <button type="button" class="btn-primary-action" onclick="addCustomizedHeroToCart()">
+              <i class="ri-add-line"></i> Add To Tray
+            </button>
+            <button type="button" class="btn-secondary-action" onclick="toggleCartDrawer(true)" title="View Current Order">
+              <i class="ri-shopping-bag-3-line"></i>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         4. HORIZONTAL DRINK QUICK SELECTOR (Baristo Style)
+         ===================================================================== -->
+    <section class="drink-products-scroll-wrapper" id="drinks-scroll">
+      <div class="drink-scroll-header">
+        <h3><i class="ri-fire-line" style="color: #c76b2b;"></i> Signature Hot Teas &amp; Beverages</h3>
+        <span class="tag">Click any drink to preview &amp; customize</span>
+      </div>
+      <div class="drink-products-scroll" id="drinkScrollContainer">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         5. DUBAI CAR WINDOW DELIVERY SPECIAL (خدمة السيارات)
+         ===================================================================== -->
+    <section class="car-order-banner" id="car-delivery">
+      <div class="car-order-content">
+        <span class="car-order-tag"><i class="ri-car-fill"></i> Dubai Cafeteria Car Service</span>
+        <h3>Driving along Al Mina Street? <br />We'll bring it right to your car window!</h3>
+        <p>No need to park or step out in the heat. Send your car model and plate number with your order, pull up outside our shop, and our staff will deliver your steaming Karak and food straight to your car.</p>
+      </div>
+
+      <div class="car-order-inputs">
+        <div class="car-input-row">
+          <input type="text" id="carModelInput" placeholder="Car Model (e.g. White Patrol)" />
+          <input type="text" id="carPlateInput" placeholder="Plate (e.g. Dubai A 12345)" />
+        </div>
+        <button class="btn-car-order" onclick="saveQuickCarOrder()">
+          <i class="ri-car-line"></i> Save Car Details &amp; Order
+        </button>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         6. FULL MENU SECTION & CATEGORY FILTER
+         ===================================================================== -->
+    <section class="menu-section" id="menu">
+      <div class="section-header">
+        <div class="section-header-text">
+          <h2>Explore Our Complete Menu</h2>
+          <p>Freshly prepared cafeteria specialties, grills, wraps, and freshly blended juices</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="menu-category-tabs">
+          <button class="category-tab-btn active" data-category="all">
+            <i class="ri-apps-2-line"></i> All Items
+          </button>
+          <button class="category-tab-btn" data-category="tea">
+            <i class="ri-cup-line"></i> Karak &amp; Teas
+          </button>
+          <button class="category-tab-btn" data-category="rolls">
+            <i class="ri-scroll-to-bottom-line"></i> Porotta Rolls
+          </button>
+          <button class="category-tab-btn" data-category="burgers">
+            <i class="ri-restaurant-line"></i> Clubs &amp; Burgers
+          </button>
+          <button class="category-tab-btn" data-category="shawarma">
+            <i class="ri-fire-line"></i> Shawarma
+          </button>
+          <button class="category-tab-btn" data-category="juices">
+            <i class="ri-goblet-line"></i> Fresh Juices
+          </button>
+          <button class="category-tab-btn" data-category="snacks">
+            <i class="ri-cake-3-line"></i> Quick Bites
+          </button>
+        </div>
+      </div>
+
+      <!-- Menu Grid -->
+      <div class="menu-grid" id="menuGrid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         7. GOOGLE MAPS REPUTATION & REVIEWS (4.8 Stars, 246 Reviews)
+         ===================================================================== -->
+    <section class="reviews-section" id="reviews">
+      <div class="reviews-header-card">
+        <div class="rating-badge-large">
+          <div class="rating-score">4.8</div>
+          <div class="rating-stars-col">
+            <div class="star-icons">
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+              <i class="ri-star-fill"></i>
+            </div>
+            <div class="review-count-text">Rated by <strong>246+ customers</strong> on Google Maps</div>
+          </div>
+        </div>
+
+        <a href="https://www.google.com/maps/place/ARAB+CHAI+CAFE+%26+RESTAURANT/@25.2475553,55.2767648,17z/data=!4m15!1m8!3m7!1s0x3e5f4304b14932f1:0x7b0410d25f61b87c!2sARAB+CHAI+CAFE+%26+RESTAURANT!8m2!3d25.2475553!4d55.2767648!10e2!16s%2Fg%2F11vhw5b_q4!3m5!1s0x3e5f4304b14932f1:0x7b0410d25f61b87c!8m2!3d25.2475553!4d55.2767648!16s%2Fg%2F11vhw5b_q4" target="_blank" rel="noopener" class="btn-maps-link">
+          <i class="ri-google-fill"></i> View on Google Maps <i class="ri-arrow-right-up-line"></i>
+        </a>
+      </div>
+
+      <div class="reviews-carousel-grid">
+        <div class="review-card">
+          <div class="review-user-row">
+            <div class="review-avatar">A</div>
+            <div>
+              <div class="review-user-name">Ahmed Al-Mansouri</div>
+              <div class="review-user-meta">Local Guide • 3 weeks ago</div>
+            </div>
+          </div>
+          <div class="star-icons" style="font-size: 15px;">
+            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+          </div>
+          <p class="review-comment">"Hands down the best Zafran Karak tea in Al Mina! The aroma of cardamom hits you right as you park outside. The Oman chips roll with cheese is fresh, flaky and crunchy."</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-user-row">
+            <div class="review-avatar">R</div>
+            <div>
+              <div class="review-user-name">Rahul Sharma</div>
+              <div class="review-user-meta">Verified Review • 1 month ago</div>
+            </div>
+          </div>
+          <div class="star-icons" style="font-size: 15px;">
+            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+          </div>
+          <p class="review-comment">"Super fast car window service. We honked outside at 1 AM on Friday night and got piping hot chai in clay cups plus chicken shawarmas in less than 4 minutes. 10/10!"</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-user-row">
+            <div class="review-avatar">M</div>
+            <div>
+              <div class="review-user-name">Maryam K.</div>
+              <div class="review-user-meta">Verified Review • 2 months ago</div>
+            </div>
+          </div>
+          <div class="star-icons" style="font-size: 15px;">
+            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+          </div>
+          <p class="review-comment">"The Arab Special Club sandwich is gigantic and comes with seasoned fries. Perfect place for late-night cravings in Dubai. Very clean, polite staff and great prices."</p>
+        </div>
+
+        <div class="review-card">
+          <div class="review-user-row">
+            <div class="review-avatar">F</div>
+            <div>
+              <div class="review-user-name">Faisal Al-Zaabi</div>
+              <div class="review-user-meta">Local Guide • 3 months ago</div>
+            </div>
+          </div>
+          <div class="star-icons" style="font-size: 15px;">
+            <i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i><i class="ri-star-fill"></i>
+          </div>
+          <p class="review-comment">"Their Awar Qalb juice is thick and not overly sweetened. The Sulaimani tea after dinner is therapeutic. So happy to have them in Madinat Dubai Al Melaheyah."</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         8. LOCATION & CONTACT
+         ===================================================================== -->
+    <section class="location-section" id="location">
+      <div class="location-grid">
+
+        <!-- Info Card -->
+        <div class="location-info-card">
+          <div>
+            <h3>Visit Arab Chai Cafe</h3>
+            <p style="color: rgb(var(--content-color)); font-size: 14.5px;">Come relax with friends or pull up for fast curbside service.</p>
+
+            <div class="location-detail-list">
+              <div class="location-detail-item">
+                <div class="location-icon-box"><i class="ri-map-pin-2-fill"></i></div>
+                <div class="location-text">
+                  <h5>Address &amp; Plus Code</h5>
+                  <p>67XG+3R4 - Al Mina St - Madinat Dubai Al Melaheyah - Al Mina - Dubai, UAE</p>
+                </div>
+              </div>
+
+              <div class="location-detail-item">
+                <div class="location-icon-box"><i class="ri-time-fill"></i></div>
+                <div class="location-text">
+                  <h5>Operating Hours</h5>
+                  <p>Open Daily: <strong>6:00 AM – 2:00 AM</strong> (7 Days a Week)</p>
+                </div>
+              </div>
+
+              <div class="location-detail-item">
+                <div class="location-icon-box"><i class="ri-phone-fill"></i></div>
+                <div class="location-text">
+                  <h5>Phone &amp; Orders</h5>
+                  <p><strong>+971 56 684 7002</strong> (WhatsApp &amp; Calls Available)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="location-actions-row">
+            <a href="https://www.google.com/maps/place/ARAB+CHAI+CAFE+%26+RESTAURANT/@25.2475553,55.2767648,17z/data=!4m15!1m8!3m7!1s0x3e5f4304b14932f1:0x7b0410d25f61b87c!2sARAB+CHAI+CAFE+%26+RESTAURANT!8m2!3d25.2475553!4d55.2767648!10e2!16s%2Fg%2F11vhw5b_q4!3m5!1s0x3e5f4304b14932f1:0x7b0410d25f61b87c!8m2!3d25.2475553!4d55.2767648!16s%2Fg%2F11vhw5b_q4" target="_blank" rel="noopener" class="btn-primary-action" style="flex: unset;">
+              <i class="ri-direction-line"></i> Get Directions
+            </a>
+            <a href="tel:+971566847002" class="btn-secondary-action">
+              <i class="ri-phone-line"></i> Call Cafe
+            </a>
+            <a href="https://wa.me/971566847002" target="_blank" class="btn-whatsapp-sidebar" style="width: auto; padding: 12px 18px;">
+              <i class="ri-whatsapp-line"></i> WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <!-- Google Map Iframe Card -->
+        <div class="location-map-card">
+          <iframe 
+            title="Arab Chai Cafe Location Map"
+            src="https://maps.google.com/maps?q=25.2475553,55.2767648&hl=en&z=16&output=embed"
+            loading="lazy">
+          </iframe>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         9. FOOTER
+         ===================================================================== -->
+    <footer class="main-footer">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="assets/arab-chai-logo.svg" alt="Arab Chai Cafe" style="height: 48px; margin-bottom: 14px; filter: brightness(0) invert(1);" />
+          <p>Arab Chai Cafe &amp; Restaurant is Al Mina's favorite destination for authentic slow-simmered Karak tea, fresh porotta rolls, cafeteria burgers, and late-night cravings.</p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="#hero">Hero Customizer</a>
+            <a href="#drinks-scroll">Signature Karak</a>
+            <a href="#menu">Full Menu</a>
+            <a href="#car-delivery">Car Window Order</a>
+            <a href="#reviews">Google Reviews (4.8 ★)</a>
+            <a href="#location">Location &amp; Timings</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Cafeteria Favorites</h4>
+          <div class="footer-links">
+            <a href="#menu">Zafran Special Karak</a>
+            <a href="#menu">Chips Oman Porotta Roll</a>
+            <a href="#menu">Zinger Mathafi Burger</a>
+            <a href="#menu">Arabic Chicken Shawarma</a>
+            <a href="#menu">Awar Qalb Special Juice</a>
+            <a href="#menu">Matka Clay Pot Chai</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Direct Contact</h4>
+          <p><strong>Phone:</strong> +971 56 684 7002</p>
+          <p style="margin-top: 4px;"><strong>Address:</strong> Al Mina St, Madinat Dubai Al Melaheyah, Dubai</p>
+          <p style="margin-top: 4px;"><strong>Hours:</strong> 6:00 AM – 2:00 AM Daily</p>
+          <div style="margin-top: 14px;">
+            <a href="https://wa.me/971566847002" target="_blank" class="btn-whatsapp-sidebar" style="display: inline-flex; width: auto; padding: 8px 16px;">
+              <i class="ri-whatsapp-line"></i> Chat On WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Arab Chai Cafe &amp; Restaurant • Al Mina, Dubai. All Rights Reserved.</div>
+        <div>Crafted in Dubai • Powered by Antigravity</div>
+      </div>
+    </footer>
+
+  </main>
+
+  <!-- =======================================================================
+       10. SLIDE-OUT CART TRAY & WHATSAPP CHECKOUT DRAWER
+       ======================================================================= -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+
+  <div class="cart-drawer" id="cartDrawer">
+    <div class="cart-drawer-header">
+      <h3><i class="ri-shopping-basket-2-line"></i> Your Order Tray</h3>
+      <button class="btn-close-cart" id="closeCartBtn" aria-label="Close Tray">
+        <i class="ri-close-line"></i>
+      </button>
+    </div>
+
+    <div class="cart-drawer-body" id="cartDrawerBody">
+      <!-- Populated dynamically by app.js -->
+    </div>
+
+    <div class="cart-drawer-footer">
+      <!-- Dining / Car Delivery Selector inside Drawer -->
+      <div class="cart-order-type-picker">
+        <label>Select Dining / Delivery Mode</label>
+        <div class="order-type-pills">
+          <button type="button" class="order-type-pill active" data-mode="car">🚗 Car Window</button>
+          <button type="button" class="order-type-pill" data-mode="takeaway">🛍️ Takeaway</button>
+          <button type="button" class="order-type-pill" data-mode="dinein">🍽️ Dine-In</button>
+        </div>
+
+        <div class="car-details-cart-field show" id="cartCarDetailsField">
+          <input type="text" id="cartCarInput" placeholder="Enter Car Model &amp; Plate (e.g. White Patrol 89234)" />
+        </div>
+      </div>
+
+      <!-- Calculation Rows -->
+      <div class="cart-calc-row">
+        <span>Subtotal</span>
+        <span id="cartSubtotalVal">AED 0.00</span>
+      </div>
+      <div class="cart-calc-row">
+        <span>UAE VAT (5%)</span>
+        <span id="cartVatVal">AED 0.00</span>
+      </div>
+      <div class="cart-calc-total">
+        <span>Grand Total</span>
+        <span id="cartTotalVal">AED 0.00</span>
+      </div>
+
+      <div style="margin-top: 14px;">
+        <button class="btn-whatsapp-checkout" onclick="checkoutViaWhatsApp()">
+          <i class="ri-whatsapp-line" style="font-size: 20px;"></i> Send Order on WhatsApp
+        </button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- JavaScript App Logic -->
+<script src="js/app.js"></script>
+
+</body>
+</html>
